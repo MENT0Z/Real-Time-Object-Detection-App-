@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/pic_to_be_detected"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/pic_to_be_detected"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_to_select_image_form_gallery"
+        android:text="Select Image"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#00E676"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btn_to_select_image_form_gallery"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn_to_open_cam"
+        android:text="Open Camera"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#00E676"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btn_to_open_cam"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/predict_btn"
+        android:text="Predict"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#00E676"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Results:"
+        android:layout_below="@id/predict_btn"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/results"/>
+</RelativeLayout>
